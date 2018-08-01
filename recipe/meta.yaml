@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.7.9" %}
-{% set sha256 = "5b54e4f7bb00afee7ca9ad0fd7f5fda69afe39c817f68c7739939b1415f05008" %}
+{% set version = "7.7.15" %}
+{% set sha256 = "37e0aa1d48f5aa279d80918039dc5538eb461e885828db8ee8e4f53992d4215c" %}
 
 package:
   name: {{ name|lower }}
@@ -19,7 +19,7 @@ source:
     - Makefile.in.patch
 
 build:
-  number: 2
+  number: 0
   skip: True  # [win or py3k]
 
 requirements:
