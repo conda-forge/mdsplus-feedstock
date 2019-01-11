@@ -28,18 +28,21 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - freetds 1.*
-    - libxml2 2.9.*
+    - icu 58.*
+    - libiconv 1.*
+    - libxml2 2.*
     - perl
     - python
     - readline 7.*
     - setuptools
   run:
+    - freetds 1.*
     - icu 58.*
-    - libiconv 1.15.*
+    - libiconv 1.*
+    - libxml2 2.*
     - numpy
     - python
     - readline 7.*
-    - xz 5.2.*
 
 test:
   imports:
