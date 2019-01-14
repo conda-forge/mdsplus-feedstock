@@ -26,6 +26,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ compiler('fortran') }}
   host:
     - freetds 1.*
     - icu 58.*
