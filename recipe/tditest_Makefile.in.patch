@@ -1,0 +1,11 @@
+--- tditest/Makefile.in.orig	2019-01-16 13:40:23.000000000 -0800
++++ tditest/Makefile.in	2019-01-16 13:40:27.000000000 -0800
+@@ -1,7 +1,7 @@
+ include @top_builddir@/Makefile.inc
+ 
+ VPATH = @srcdir@
+-
++LIBS=@LIBS@
+ SOURCES = tditest.c
+ 
+ all : @MAKEBINDIR@ @MAKEBINDIR@tditest$(EXE)
