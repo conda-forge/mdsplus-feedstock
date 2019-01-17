@@ -18,6 +18,7 @@ source:
     - mdsdcl_show_version.c.patch
     - Makefile.in.patch
     - mdstcpip_Makefile.in.patch
+    - mdsdcl_Makefile.in.patch
 
 build:
   number: 1001
