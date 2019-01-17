@@ -17,6 +17,7 @@ source:
     - configure.patch.linux  # [linux]
     - mdsdcl_show_version.c.patch
     - Makefile.in.patch
+    - mdstcpip_Makefile.in.patch
 
 build:
   number: 1001
