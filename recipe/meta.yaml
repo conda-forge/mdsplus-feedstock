@@ -17,29 +17,36 @@ source:
     - configure.patch.linux  # [linux]
     - mdsdcl_show_version.c.patch
     - Makefile.in.patch
+    - mdstcpip_Makefile.in.patch
+    - mdsdcl_Makefile.in.patch
 
 build:
-  number: 1
+  number: 1001
   skip: True  # [win or py3k]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ compiler('fortran') }}
   host:
     - freetds 1.*
-    - libxml2 2.9.*
+    - icu 58.*
+    - libiconv 1.*
+    - libxml2 2.*
     - perl
+    - pkg-config
     - python
     - readline 7.*
     - setuptools
   run:
+    - freetds 1.*
     - icu 58.*
-    - libiconv 1.15.*
+    - libiconv 1.*
+    - libxml2 2.*
     - numpy
     - python
     - readline 7.*
-    - xz 5.2.*
 
 test:
   imports:
