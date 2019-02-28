@@ -23,7 +23,7 @@ hierarchical structure. The system was designed to enable
 users to easily construct complete and coherent data sets.
 
 The MDSplus programming interface contains only a few basic
-commands, simplifyng data access even into complex
+commands, simplifying data access even into complex
 structures. Using the client/server model, data at remote
 sites can be read or written without file transfers.
 MDSplus includes x-windows and java tools for viewing data
