@@ -31,7 +31,7 @@ requirements:
     - {{ compiler('fortran') }}
   host:
     - freetds 1.*
-    - icu 58.*
+    - icu
     - libiconv 1.*
     - libxml2 2.*
     - perl
@@ -41,13 +41,9 @@ requirements:
     - setuptools
   run:
     - freetds 1.*
-    - icu 58.*
-    - libiconv 1.*
-    - libxml2 2.*
     - numpy
     - python
-    - readline 7.*
-
+    
 test:
   imports:
     - MDSplus
