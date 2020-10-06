@@ -32,12 +32,12 @@ requirements:
   host:
     - freetds 1.*
     - icu
-    - libiconv 1.*
-    - libxml2 2.*
+    - libiconv
+    - libxml2
     - perl
     - pkg-config
     - python
-    - readline 7.*
+    - readline
     - setuptools
   run:
     - freetds 1.*
