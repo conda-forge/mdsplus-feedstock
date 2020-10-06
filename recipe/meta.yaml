@@ -21,7 +21,7 @@ source:
     - mdsdcl_Makefile.in.patch
 
 build:
-  number: 1006
+  number: 1007
   skip: True  # [win]
 
 requirements:
@@ -31,23 +31,19 @@ requirements:
     - {{ compiler('fortran') }}
   host:
     - freetds 1.*
-    - icu 58.*
-    - libiconv 1.*
-    - libxml2 2.*
+    - icu
+    - libiconv
+    - libxml2
     - perl
     - pkg-config
     - python
-    - readline 7.*
+    - readline
     - setuptools
   run:
     - freetds 1.*
-    - icu 58.*
-    - libiconv 1.*
-    - libxml2 2.*
     - numpy
     - python
-    - readline 7.*
-
+    
 test:
   imports:
     - MDSplus
