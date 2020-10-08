@@ -5,9 +5,11 @@ Home: http://www.mdsplus.org/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdsplus-feedstock/blob/master/LICENSE.txt)
 
 Summary: MDSplus data management system
+
+Development: https://github.com/MDSplus/mdsplus
 
 MDSplus is a set of software tools for data acquisition and
 storage and a methodology for management of complex
