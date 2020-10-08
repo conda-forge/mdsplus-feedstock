@@ -10,7 +10,7 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/MDSplus/{{ name }}/archive/stable_release-{{ version | replace('.','-') }}.tar.gz
   sha256: {{ sha256 }}
-  
+
   #Patches are mostly to correct /usr/local type explicit statements of dependencies  ; issue raised at https://github.com/MDSplus/mdsplus/issues/1201
   patches:
     - configure.patch.osx  # [osx]
@@ -21,7 +21,7 @@ source:
     - mdsdcl_Makefile.in.patch
 
 build:
-  number: 1007
+  number: 1008
   skip: True  # [win]
 
 requirements:
@@ -43,7 +43,7 @@ requirements:
     - freetds 1.*
     - numpy
     - python
-    
+
 test:
   imports:
     - MDSplus
