@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.7.15" %}
-{% set sha256 = "37e0aa1d48f5aa279d80918039dc5538eb461e885828db8ee8e4f53992d4215c" %}
+{% set version = "7.96.17" %}
+{% set sha256 = "6e40ab167b6e4228c0c03c3a6b49ccae6ca5157e5beb401b467fc9c017e2604a" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +21,7 @@ source:
     - mdsdcl_Makefile.in.patch
 
 build:
-  number: 1008
+  number: 0
   skip: True  # [win]
 
 requirements:
