@@ -7,4 +7,4 @@ export XML_LIBS="-L${PREFIX}/lib -lxml2 -lz -llzma -lpthread -liconv -licui18n -
 make MOTIF_APS="" PARTS="mdsshr mdsdcl treeshr tdishr mdstcpip mdslib" MISC_PARTS="tdi include"
 make install MOTIF_APS="" PARTS="mdsshr mdsdcl treeshr tdishr mdstcpip mdslib" MISC_PARTS="tdi include"
 cd python
-python MDSplus/setup.py install --single-version-externally-managed --record record.txt
+python -m pip install ./MDSplus -vv # --single-version-externally-managed --record record.txt

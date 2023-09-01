@@ -30,6 +30,7 @@ requirements:
     - nose
     - numpy
     - perl
+    - pip
     - pkg-config
     - python
     - readline
