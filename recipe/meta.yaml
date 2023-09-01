@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.7.15" %}
-{% set sha256 = "37e0aa1d48f5aa279d80918039dc5538eb461e885828db8ee8e4f53992d4215c" %}
+{% set version = "7.139.40" %}
+{% set sha256 = "1c28c461853ddd24c56034c77df57a9dfea88fbc4f61a9a4fb5fe3ad937ec39c" %}
 
 package:
   name: {{ name|lower }}
@@ -8,20 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/MDSplus/{{ name }}/archive/stable_release-{{ version | replace('.','-') }}.tar.gz
+  url: https://github.com/MDSplus/{{ name }}/archive/alpha_release-{{ version | replace('.','-') }}.tar.gz
   sha256: {{ sha256 }}
 
-  #Patches are mostly to correct /usr/local type explicit statements of dependencies  ; issue raised at https://github.com/MDSplus/mdsplus/issues/1201
-  patches:
-    - configure.patch.osx  # [osx]
-    - configure.patch.linux  # [linux]
-    - mdsdcl_show_version.c.patch
-    - Makefile.in.patch
-    - mdstcpip_Makefile.in.patch
-    - mdsdcl_Makefile.in.patch
-
 build:
-  number: 1014
+  number: 0
   skip: True  # [win]
 
 requirements:
@@ -34,13 +25,17 @@ requirements:
     - icu
     - libiconv
     - libxml2
+    - nose
+    - numpy
     - perl
     - pkg-config
     - python
     - readline
     - setuptools
+    - zlib
   run:
     - freetds 1.*
+    - nose
     - numpy
     - python
 
