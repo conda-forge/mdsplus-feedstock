@@ -11,6 +11,8 @@ source:
   url: https://github.com/MDSplus/{{ name }}/archive/alpha_release-{{ version | replace('.','-') }}.tar.gz
   sha256: {{ sha256 }}
 
+  patches:
+    - python_MDSplus_setup.py.patch
 build:
   number: 0
   skip: True  # [win]
