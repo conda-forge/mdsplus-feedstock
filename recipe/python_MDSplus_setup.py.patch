@@ -1,6 +1,8 @@
---- setup.py	2023-09-01 14:34:22.470768380 -0700
-+++ setup_fixed.py	2023-09-01 14:35:05.784995066 -0700
-@@ -83,11 +83,12 @@
+diff --git a/python/MDSplus/setup.py b/python/MDSplus/setup.py
+index 87cd4c496..fca30c6f7 100644
+--- a/python/MDSplus/setup.py
++++ b/python/MDSplus/setup.py
+@@ -83,11 +83,12 @@ def use_distutils():
  
  
  def use_setuptools():
