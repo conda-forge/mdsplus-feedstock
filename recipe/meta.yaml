@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.7.15" %}
-{% set sha256 = "37e0aa1d48f5aa279d80918039dc5538eb461e885828db8ee8e4f53992d4215c" %}
+{% set version = "7.139.40" %}
+{% set sha256 = "1c28c461853ddd24c56034c77df57a9dfea88fbc4f61a9a4fb5fe3ad937ec39c" %}
 
 package:
   name: {{ name|lower }}
@@ -13,12 +13,12 @@ source:
 
   #Patches are mostly to correct /usr/local type explicit statements of dependencies  ; issue raised at https://github.com/MDSplus/mdsplus/issues/1201
   patches:
-    - configure.patch.osx  # [osx]
-    - configure.patch.linux  # [linux]
-    - mdsdcl_show_version.c.patch
-    - Makefile.in.patch
-    - mdstcpip_Makefile.in.patch
-    - mdsdcl_Makefile.in.patch
+    #- configure.patch.osx  # [osx]
+    #- configure.patch.linux  # [linux]
+    #- mdsdcl_show_version.c.patch
+    #- Makefile.in.patch
+    #- mdstcpip_Makefile.in.patch
+    #- mdsdcl_Makefile.in.patch
 
 build:
   number: 1014
@@ -75,3 +75,4 @@ about:
 extra:
   recipe-maintainers:
     - smithsp
+    - modestmc
