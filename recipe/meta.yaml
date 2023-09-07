@@ -13,6 +13,7 @@ source:
 
   patches:
     - python_MDSplus_setup.py.patch
+    - tdishr_yylex_TdiHash.gen.patch
 build:
   number: 0
   skip: True  # [win]
