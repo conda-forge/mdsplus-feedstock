@@ -31,6 +31,7 @@ requirements:
     - gperf
     - libiconv
     - libxml2
+    - make
     - nose
     - numpy
     - perl
