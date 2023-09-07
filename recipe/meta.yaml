@@ -28,6 +28,7 @@ requirements:
     - bison
     - flex
     - freetds 1.*
+    - gcc
     - gperf
     - libiconv
     - libxml2
