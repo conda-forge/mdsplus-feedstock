@@ -23,6 +23,10 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
   host:
+    - automake
+    - autoconf
+    - bison
+    - flex
     - freetds 1.*
     - libiconv
     - libxml2
