@@ -14,6 +14,7 @@ source:
   patches:
     - python_MDSplus_setup.py.patch
     - tdishr_yylex_TdiHash.gen.patch
+    - Makefile.inc.in.patch  # [osx]
 build:
   number: 0
   skip: True  # [win]
