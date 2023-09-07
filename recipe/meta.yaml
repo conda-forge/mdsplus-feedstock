@@ -24,7 +24,6 @@ requirements:
     - {{ compiler('fortran') }}
   host:
     - freetds 1.*
-    - icu
     - libiconv
     - libxml2
     - nose
@@ -38,7 +37,6 @@ requirements:
     - zlib
   run:
     - freetds 1.*
-    - nose
     - numpy
     - python
 
