@@ -28,11 +28,11 @@ requirements:
     - bison
     - flex
     - gperf
+    - make
   host:
     - freetds 1.*
     - libiconv
     - libxml2
-    - make
     - nose
     - numpy
     - perl
