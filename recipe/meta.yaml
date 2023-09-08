@@ -13,18 +13,26 @@ source:
 
   patches:
     - python_MDSplus_setup.py.patch
+    - tdishr_yylex_TdiHash.gen.patch
+    - Makefile.inc.in.patch  # [osx]
 build:
   number: 0
   skip: True  # [win]
+  skip: True  # [osx]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
+    - automake
+    - autoconf
+    - bison
+    - flex
+    - gperf
+    - make
   host:
     - freetds 1.*
-    - icu
     - libiconv
     - libxml2
     - nose
@@ -38,7 +46,6 @@ requirements:
     - zlib
   run:
     - freetds 1.*
-    - nose
     - numpy
     - python
 
