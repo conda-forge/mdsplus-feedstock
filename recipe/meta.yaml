@@ -21,7 +21,7 @@ source:
     - mdsdcl_Makefile.in.patch
 
 build:
-  number: 1001
+  number: 1002
   skip: True  # [win or py3k]
 
 requirements:
