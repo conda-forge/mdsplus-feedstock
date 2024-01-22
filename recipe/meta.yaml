@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.139.60" %}
-{% set sha256 = "8bf4af9827e6710ef5f4fb7c67e6cc564e14d5b1f04333fba4a059a8f86cbb47" %}
+{% set version = "7.139.61" %}
+{% set sha256 = "e85dfb2eb95767d491c1fc44575acb41b5aff7ec7541feaa19c04a9e6e760fed" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ source:
     - tdishr_yylex_TdiHash.gen.patch
     - Makefile.inc.in.patch  # [osx]
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   skip: true  # [osx]
 
