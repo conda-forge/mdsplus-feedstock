@@ -15,6 +15,7 @@ source:
     - python_MDSplus_setup.py.patch
     - tdishr_yylex_TdiHash.gen.patch
     - Makefile.inc.in.patch  # [osx]
+    - mdstcpip_zlib_zconf.h.patch  # [osx]
 build:
   number: 1
   skip: true  # [win]

@@ -1,0 +1,12 @@
+--- mdstcpip/zlib/zconf.h.orig	2024-03-29 13:34:26
++++ mdstcpip/zlib/zconf.h	2024-03-29 13:34:39
+@@ -223,9 +223,7 @@
+ #define FAR
+ #endif
+ 
+-#if !defined(MACOS) && !defined(TARGET_OS_MAC)
+ typedef unsigned char Byte;	/* 8 bits */
+-#endif
+ typedef unsigned int uInt;	/* 16 bits or more */
+ typedef unsigned long uLong;	/* 32 bits or more */
+ 
