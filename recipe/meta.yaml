@@ -17,6 +17,7 @@ source:
     - Makefile.inc.in.patch  # [osx]
     - mdstcpip_zlib_zconf.h.patch  # [osx]
     - _include_pthread_port.h.patch  # [osx]
+    - _include__mdsversion.h.in.patch  # [osx]
 build:
   number: 1
   skip: true  # [win]
