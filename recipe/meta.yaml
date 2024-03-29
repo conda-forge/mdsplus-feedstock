@@ -41,7 +41,7 @@ requirements:
     - perl
     - pip
     - pkg-config
-    - python
+    - python >=3.8
     - readline
     - setuptools
     - zlib
@@ -82,3 +82,4 @@ extra:
   recipe-maintainers:
     - smithsp
     - modestmc
+    - wdeshazer
