@@ -42,7 +42,7 @@ requirements:
     - perl
     - pip
     - pkg-config
-    - python >=3.8
+    - python
     - readline
     - setuptools
     - zlib
