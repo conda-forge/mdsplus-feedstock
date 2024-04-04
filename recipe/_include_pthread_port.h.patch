@@ -1,15 +1,15 @@
 --- _include/pthread_port.h.orig	2024-03-29 14:06:17
-+++ _include/pthread_port.h	2024-03-29 14:10:47
-@@ -61,30 +61,6 @@
++++ _include/pthread_port.h	2024-04-04 06:30:32
+@@ -61,29 +61,9 @@
  #include <sys/time.h>
  #include <time.h>
  
 -#if defined(__MACH__) && !defined(CLOCK_REALTIME)
 -#include <mach/clock.h>
 -#include <mach/mach.h>
--#ifndef CLOCK_REALTIME
--#define CLOCK_REALTIME 0
--#endif
+ #ifndef CLOCK_REALTIME
+ #define CLOCK_REALTIME 0
+ #endif
 -static inline void clock_gettime(clk_id_unused, struct timespec *ts)
 -{
 -  clock_serv_t cclock;
@@ -27,7 +27,6 @@
 -  ts->tv_nsec = 0;
 -}
 -#endif
--
+ 
  // FREE
  static void __attribute__((unused)) free_if(void *ptr) { free(*(void **)ptr); }
- #define FREE_ON_EXIT(ptr) pthread_cleanup_push(free_if, (void *)&ptr)
