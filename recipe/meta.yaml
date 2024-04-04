@@ -12,7 +12,6 @@ source:
   sha256: {{ sha256 }}
 
   patches:
-    - python_MDSplus_setup.py.patch
     - tdishr_yylex_TdiHash.gen.patch
     - Makefile.inc.in.patch  # [osx]
 build:
