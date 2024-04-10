@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.139.65" %}
-{% set sha256 = "66c3b3b97934b1e4af342388f9ee69b4bd242331558e6a68b624be7980e84c21" %}
+{% set version = "7.140.71" %}
+{% set sha256 = "ad08c9cc7c88f7eed946bf06f2bd6a90e2e1a25f" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/MDSplus/{{ name }}/archive/alpha_release-{{ version | replace('.','-') }}.tar.gz
+  url: https://github.com/MDSplus/{{ name }}/release/alpha_release-{{ version | replace('.','-') }}.tar.gz
   sha256: {{ sha256 }}
 
   patches:
@@ -42,7 +42,7 @@ requirements:
     - perl
     - pip
     - pkg-config
-    - python
+    - python >=3.8
     - readline
     - setuptools
     - zlib
