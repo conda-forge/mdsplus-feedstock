@@ -15,7 +15,7 @@ source:
     - tdishr_yylex_TdiHash.gen.patch
     - Makefile.inc.in.patch  # [osx]
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [osx]
 
