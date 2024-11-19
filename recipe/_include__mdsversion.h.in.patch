@@ -1,0 +1,15 @@
+--- _include/_mdsversion.h.in.orig	2024-03-29 15:49:48
++++ _include/_mdsversion.h.in	2024-03-29 16:28:31
+@@ -11,9 +11,9 @@
+ 
+ EXPORT
+ const mds_version_t VERSIONCONST = {
+-	@RELEASE_MAJOR@,
+-	@RELEASE_MINOR@,
+-	@RELEASE_RELEASE@,
++	0,
++	0,
++	0,
+ 	"@RELEASE_BRANCH@",
+ };
+ 

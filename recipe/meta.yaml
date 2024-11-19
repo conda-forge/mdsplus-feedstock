@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.139.67" %}
-{% set sha256 = "0bde97a2a02feaff5d34bc17a4370e5c287c812570d9540ee364300ac3aede7f" %}
+{% set version = "7.140.71" %}
+{% set sha256 = "d01858568c5c40398e233679b23aea4dbb07395f9012f20089104a5d5d71b66b" %}
 
 package:
   name: {{ name|lower }}
@@ -8,16 +8,18 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/MDSplus/{{ name }}/archive/alpha_release-{{ version | replace('.','-') }}.tar.gz
+  url: https://github.com/MDSplus/{{ name }}/archive/refs/tags/alpha_release-{{ version | replace('.','-') }}.tar.gz
   sha256: {{ sha256 }}
 
   patches:
     - tdishr_yylex_TdiHash.gen.patch
     - Makefile.inc.in.patch  # [osx]
+    - mdstcpip_zlib_zconf.h.patch  # [osx]
+    - _include_pthread_port.h.patch  # [osx]
+    - _include__mdsversion.h.in.patch  # [osx]
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
-  skip: true  # [osx]
 
 requirements:
   build:
@@ -39,7 +41,7 @@ requirements:
     - perl
     - pip
     - pkg-config
-    - python
+    - python >=3.8
     - readline
     - setuptools
     - zlib
@@ -80,3 +82,4 @@ extra:
   recipe-maintainers:
     - smithsp
     - modestmc
+    - wdeshazer
