@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.139.67" %}
-{% set sha256 = "0bde97a2a02feaff5d34bc17a4370e5c287c812570d9540ee364300ac3aede7f" %}
+{% set version = "7-148-5" %}
+{% set sha256 = "430d489ac269beca55a803134ec575a9bbf667e7e41867e60d6bb7ef52cca6ac" %}
 
 package:
   name: {{ name|lower }}
@@ -22,6 +22,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
     - automake
