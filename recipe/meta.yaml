@@ -36,7 +36,7 @@ requirements:
     - libiconv
     - libxml2
     - nose
-    - numpy<2.0
+    - numpy <2.0
     - perl
     - pip
     - pkg-config
@@ -46,7 +46,7 @@ requirements:
     - zlib
   run:
     - freetds 1.*
-    - numpy<2.0
+    - numpy <2.0
     - python
 
 test:
