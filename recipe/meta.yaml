@@ -35,7 +35,7 @@ requirements:
     - freetds 1.*
     - libiconv
     - libxml2
-    - nose
+    - pynose
     - perl
     - pip
     - pkg-config
