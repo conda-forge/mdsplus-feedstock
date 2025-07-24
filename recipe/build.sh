@@ -12,7 +12,7 @@ from setuptools import setup
 
 setup(
     name='MDSplus',
-    version='7.139.40',
+    version='7.139.59',
     description='MDSplus Python Objects',
     url='https://gafusion.github.io/omas',
     author='MDSplus Developers',
