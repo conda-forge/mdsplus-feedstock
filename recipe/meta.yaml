@@ -15,7 +15,7 @@ source:
     - tdishr_yylex_TdiHash.gen.patch
     - Makefile.inc.in.patch  # [osx]
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   skip: true  # [osx]
 
@@ -34,7 +34,7 @@ requirements:
   host:
     - freetds 1.*
     - libiconv
-    - libxml2
+    - libxml2-devel
     - pynose
     - perl
     - pip
