@@ -11,9 +11,6 @@ source:
   url: https://github.com/MDSplus/{{ name }}/archive/alpha_release-{{ version | replace('.','-') }}.tar.gz
   sha256: {{ sha256 }}
 
-  patches:
-    - tdishr_yylex_TdiHash.gen.patch
-    - Makefile.inc.in.patch  # [osx]
 build:
   number: 3
   skip: true  # [win]
@@ -31,6 +28,8 @@ requirements:
     - flex
     - gperf
     - make
+    - cmake
+    - libxml2
   host:
     - freetds 1.*
     - libiconv
@@ -41,13 +40,13 @@ requirements:
     - pkg-config
     - python {{ python }}
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
-    - numpy
+    - numpy 2.*
     - readline
     - setuptools
     - zlib
   run:
     - freetds 1.*
-    - numpy
+    - numpy 2.*
     - python
 
 test:

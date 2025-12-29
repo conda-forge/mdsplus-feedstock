@@ -6,8 +6,6 @@ c_stdlib:
 - sysroot
 c_stdlib_version:
 - '2.17'
-cdt_name:
-- conda
 channel_sources:
 - conda-forge
 channel_targets:
@@ -26,8 +24,6 @@ libiconv:
 - '1'
 libxml2:
 - '2.13'
-numpy:
-- '2'
 perl:
 - 5.32.1
 pin_run_as_build:
