@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.139.59" %}
-{% set sha256 = "c64e2389398d60c03eaa308a4855025ce130da2d929a5f76d2f8689056e36d04" %}
+{% set version = "7.157.0" %}
+{% set sha256 = "a0dcf75caf4f083c9640b03ab75969294070a4e605a30aeeeb12c131bcd67bf2" %}
 
 package:
   name: {{ name|lower }}
@@ -41,13 +41,13 @@ requirements:
     - pkg-config
     - python {{ python }}
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
-    - numpy <2.0
+    - numpy
     - readline
     - setuptools
     - zlib
   run:
     - freetds 1.*
-    - numpy <2.0
+    - numpy
     - python
 
 test:
