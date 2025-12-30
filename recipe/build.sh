@@ -17,6 +17,10 @@ cmake -G "Unix Makefiles" \
   -DCMAKE_PREFIX_PATH=${PREFIX} \
   ..
 
-# Build and install (CMake handles Python installation automatically)
+# Build and install C/C++ libraries
 make -j${CPU_COUNT}
 make install
+
+# Install Python package to proper site-packages location
+cd ../python/MDSplus
+${PYTHON} -m pip install . -vv --no-deps --no-build-isolation
