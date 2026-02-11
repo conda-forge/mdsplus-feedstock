@@ -5,8 +5,8 @@
 mkdir -p build
 cd build
 
-# Convert version to release tag format (e.g., 7.157.0 -> alpha_release-7-157-0)
-RELEASE_TAG="alpha_release-${PKG_VERSION//./-}"
+# Specify version separated by dots (not dashes!)
+RELEASE_TAG="alpha_release-${PKG_VERSION}"
 
 # Configure with CMake
 cmake -G "Unix Makefiles" \
