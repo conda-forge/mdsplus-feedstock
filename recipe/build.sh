@@ -6,7 +6,6 @@ mkdir -p build
 cd build
 
 # Specify version separated by dots (not dashes!)
-RELEASE_TAG="alpha_release-${PKG_VERSION}"
 
 # Configure with CMake
 cmake -G "Unix Makefiles" \
@@ -19,7 +18,7 @@ cmake -G "Unix Makefiles" \
   -DREADLINE_DIR=${PREFIX} \
   -DLIBXML2_DIR=${PREFIX} \
   -DCMAKE_PREFIX_PATH=${PREFIX} \
-  -DRELEASE_TAG="${RELEASE_TAG}" \
+  -DRELEASE_TAG="${PKG_VERSION}" \
   ..
 
 # Build and install C/C++ libraries
