@@ -15,6 +15,7 @@ cmake -G "Unix Makefiles" \
   -DREADLINE_DIR=${PREFIX} \
   -DLIBXML2_DIR=${PREFIX} \
   -DCMAKE_PREFIX_PATH=${PREFIX} \
+  -DRELEASE_TAG="alpha_release-{{ version | replace('.', '-') }}" \
   ..
 
 # Build and install C/C++ libraries
