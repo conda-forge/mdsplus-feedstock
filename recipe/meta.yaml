@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.157.0" %}
-{% set sha256 = "a0dcf75caf4f083c9640b03ab75969294070a4e605a30aeeeb12c131bcd67bf2" %}
+{% set version = "7-157-4" %}
+{% set sha256 = "839f7ec5962e47ecaaee123172f4c25285bc7e8ccbc3df83b6bf962e2b2bf2aa" %}
 
 package:
   name: {{ name|lower }}
