@@ -15,7 +15,7 @@ cmake -G "Unix Makefiles" \
   -DREADLINE_DIR=${PREFIX} \
   -DLIBXML2_DIR=${PREFIX} \
   -DLIBXML2_LIBRARY=${PREFIX}/lib \
-  -DLIBXML2_INCLUDE_DIR=${PREFIX}/include \
+  -DLIBXML2_INCLUDE_DIR=${PREFIX}/include/libxml2 \
   -DCMAKE_PREFIX_PATH=${PREFIX} \
   ..
 
