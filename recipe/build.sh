@@ -14,6 +14,8 @@ cmake -G "Unix Makefiles" \
   -DENABLE_MOTIF=OFF \
   -DREADLINE_DIR=${PREFIX} \
   -DLIBXML2_DIR=${PREFIX} \
+  -DLIBXML2_LIBRARY=${PREFIX}/lib \
+  -DLIBXML2_INCLUDE_DIR=${PREFIX}/include \
   -DCMAKE_PREFIX_PATH=${PREFIX} \
   ..
 
