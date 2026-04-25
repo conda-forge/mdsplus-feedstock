@@ -30,6 +30,7 @@ requirements:
     - make
     - cmake
     - libxml2
+    - libxml2-devel
   host:
     - freetds 1.*
     - libiconv
