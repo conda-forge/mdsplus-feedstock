@@ -15,7 +15,7 @@ cmake -G "Unix Makefiles" \
   -DENABLE_LABVIEW=OFF \
   -DREADLINE_DIR=${PREFIX} \
   -DLIBXML2_DIR=${PREFIX} \
-  -DCMAKE_PREFIX_PATH=${PREFIX} \
+  -DCMAKE_INSTALL_PREFIX=${PREFIX} \
   ..
 
 # Build and install C/C++ libraries
