@@ -255,5 +255,3 @@ Feedstock Maintainers
 
 * [@modestmc](https://github.com/modestmc/)
 * [@smithsp](https://github.com/smithsp/)
-* [@wdeshazer](https://github.com/wdeshazer/)
-
