@@ -12,11 +12,9 @@ source:
   sha256: {{ sha256 }}
 
   # patches:
-    # - tdishr_yylex_TdiHash.gen.patch
-    # - Makefile.inc.in.patch  # [osx]
-    # - mdstcpip_zlib_zconf.h.patch  # [osx]
-    # - _include_pthread_port.h.patch  # [osx]
-    # - _include__mdsversion.h.in.patch  # [osx]
+  #   - Makefile.inc.in.patch  # [osx]
+  #   - _include_pthread_port.h.patch  # [osx]
+  #   - _include__mdsversion.h.in.patch  # [osx]
 build:
   number: 2
   skip: true  # [win]
@@ -44,7 +42,7 @@ requirements:
     - perl
     - pip
     - pkg-config
-    - python {{ python }}
+    - python
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - numpy 2.*
     - readline
