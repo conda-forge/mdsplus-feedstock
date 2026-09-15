@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.157.0" %}
-{% set sha256 = "a0dcf75caf4f083c9640b03ab75969294070a4e605a30aeeeb12c131bcd67bf2" %}
+{% set version = "7.158.0" %}
+{% set sha256 = "5cf90bf8d8440c7ebd512a8c6452cb2f96d72360a85833f5d81661987536f7e0" %}
 
 package:
   name: {{ name|lower }}
@@ -32,12 +32,11 @@ requirements:
     - gperf
     - make
     - cmake
-    - libxml2
     - libxml2-devel
   host:
     - freetds 1.*
     - libiconv
-    - libxml2
+    - libxml2-devel
     - pynose
     - perl
     - pip
@@ -56,6 +55,10 @@ requirements:
 test:
   imports:
     - MDSplus
+  commands:
+    # The python package has shipped without a version, or stamped with the
+    # previous release, more than once; both are silent until runtime.
+    - python -c "import MDSplus; assert MDSplus.__version__ == '{{ version }}', MDSplus.__version__"
 
 about:
   home: http://www.mdsplus.org/
