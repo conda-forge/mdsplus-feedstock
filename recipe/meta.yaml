@@ -1,5 +1,5 @@
 {% set name = "mdsplus" %}
-{% set version = "7-160-3" %}
+{% set version = "7.160.3" %}
 {% set sha256 = "a696359482d3e8dcc0a90810dec2fe6460b897e9a0ee35cd416234d6ccd869db" %}
 
 package:
@@ -8,13 +8,16 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/MDSplus/{{ name }}/archive/alpha_release-{{ version | replace('.','-') }}.tar.gz
+  url: https://github.com/MDSplus/{{ name }}/archive/refs/tags/alpha_release-{{ version | replace('.','-') }}.tar.gz
   sha256: {{ sha256 }}
 
+  # patches:
+  #   - Makefile.inc.in.patch  # [osx]
+  #   - _include_pthread_port.h.patch  # [osx]
+  #   - _include__mdsversion.h.in.patch  # [osx]
 build:
   number: 0
   skip: true  # [win]
-  skip: true  # [osx]
 
 requirements:
   build:
@@ -38,7 +41,7 @@ requirements:
     - perl
     - pip
     - pkg-config
-    - python {{ python }}
+    - python
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - numpy 2.*
     - readline
@@ -85,3 +88,4 @@ extra:
   recipe-maintainers:
     - smithsp
     - modestmc
+    - wdeshazer
