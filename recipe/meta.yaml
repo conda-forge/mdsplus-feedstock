@@ -16,7 +16,7 @@ source:
   #   - _include_pthread_port.h.patch  # [osx]
   #   - _include__mdsversion.h.in.patch  # [osx]
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
