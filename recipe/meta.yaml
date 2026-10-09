@@ -1,6 +1,6 @@
 {% set name = "mdsplus" %}
-{% set version = "7.160.3" %}
-{% set sha256 = "a696359482d3e8dcc0a90810dec2fe6460b897e9a0ee35cd416234d6ccd869db" %}
+{% set version = "7-160-4" %}
+{% set sha256 = "ac9bba2e7bdf7b63d5c4b33dc522435f46d733478046c973911f5005d88dd9a6" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ source:
   #   - _include_pthread_port.h.patch  # [osx]
   #   - _include__mdsversion.h.in.patch  # [osx]
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
